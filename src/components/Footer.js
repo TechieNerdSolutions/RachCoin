@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaTwitter, FaFacebookF, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -6,7 +7,10 @@ function Footer() {
       <div className="container py-5">
         <div className="row g-5">
           <div className="col-md-6">
-            <h1 className="text-primary mb-4"><img className="img-fluid me-2" src="img/icon-1.png" alt="" style={{ width: '45px' }} />RachCoin</h1>
+            <h1 className="text-primary mb-4 d-flex align-items-center">
+              <img className="img-fluid me-2" src="img/icon-1.png" alt="" style={{ width: '45px' }} />
+              RachCoin
+            </h1>
             <span>Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</span>
           </div>
           <div className="col-md-6">
@@ -19,9 +23,9 @@ function Footer() {
           </div>
           <div className="col-lg-3 col-md-6">
             <h5 className="mb-4">Get In Touch</h5>
-            <p><i className="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-            <p><i className="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-            <p><i className="fa fa-envelope me-3"></i>info@example.com</p>
+            <p><FaMapMarkerAlt className="me-3" />123 Street, New York, USA</p>
+            <p><FaPhoneAlt className="me-3" />+012 345 67890</p>
+            <p><FaEnvelope className="me-3" />info@example.com</p>
           </div>
           <div className="col-lg-3 col-md-6">
             <h5 className="mb-4">Our Services</h5>
@@ -40,10 +44,10 @@ function Footer() {
           <div className="col-lg-3 col-md-6">
             <h5 className="mb-4">Follow Us</h5>
             <div className="d-flex">
-              <a className="btn btn-square rounded-circle me-1" href=""><i className="fab fa-twitter"></i></a>
-              <a className="btn btn-square rounded-circle me-1" href=""><i className="fab fa-facebook-f"></i></a>
-              <a className="btn btn-square rounded-circle me-1" href=""><i className="fab fa-youtube"></i></a>
-              <a className="btn btn-square rounded-circle me-1" href=""><i className="fab fa-linkedin-in"></i></a>
+              <a className="btn btn-square rounded-circle me-1" href=""><FaTwitter /></a>
+              <a className="btn btn-square rounded-circle me-1" href=""><FaFacebookF /></a>
+              <a className="btn btn-square rounded-circle me-1" href=""><FaYoutube /></a>
+              <a className="btn btn-square rounded-circle me-1" href=""><FaLinkedinIn /></a>
             </div>
           </div>
         </div>

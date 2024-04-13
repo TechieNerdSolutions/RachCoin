@@ -1,8 +1,9 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap"; // Optional for using React Router
+import { LinkContainer } from "react-router-bootstrap";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'; // Import the icons
 
-function CustomNavbar() {
+function NavbarSection() {
   return (
     <Navbar
       expand="lg"
@@ -59,24 +60,23 @@ function CustomNavbar() {
           </LinkContainer>
         </Nav>
         <div className="d-lg-flex align-items-center d-none">
-          {/* Social media icons */}
           <a
             href="#"
             className="btn btn-square rounded-circle bg-light text-primary me-2"
           >
-            <i className="fab fa-facebook-f"></i>
+            <FaFacebookF />
           </a>
           <a
             className="btn btn-square rounded-circle bg-light text-primary me-2"
             href="/"
           >
-            <i className="fab fa-twitter"></i>
+            <FaTwitter />
           </a>
           <a
             className="btn btn-square rounded-circle bg-light text-primary"
             href="/"
           >
-            <i className="fab fa-linkedin-in"></i>
+            <FaLinkedinIn />
           </a>
         </div>
       </Navbar.Collapse>
@@ -84,4 +84,4 @@ function CustomNavbar() {
   );
 }
 
-export default CustomNavbar;
+export default NavbarSection;
